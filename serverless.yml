@@ -1,4 +1,4 @@
-org: nayeliguzman
+org: juanrodo
 service: api-web-scraping
 
 provider:
@@ -8,14 +8,14 @@ provider:
   memorySize: 1024
   timeout: 30
   iam:
-    role: arn:aws:iam::891498524793:role/LabRole
+    role: arn:aws:iam::674438223832:role/LabRole
 
 functions:
   scrape_table:
-    handler: scrap_table.lambda_handler  # Asegúrarse de que el nombre del archivo y la función coincidan
+    handler: scrap_table.lambda_handler  
     package:
       include:
-        - ./**  # Incluir todo el contenido del directorio
+        - ./**  
     events:
       - http:
           path: /scrape/table
