@@ -1,4 +1,4 @@
-org: juanrodo
+org: nayeliguzman
 service: api-web-scraping
 
 provider:
@@ -8,7 +8,7 @@ provider:
   memorySize: 1024
   timeout: 30
   iam:
-    role: arn:aws:iam::674438223832:role/LabRole
+    role: arn:aws:iam::891498524793:role/LabRole
 
 functions:
   scrape_table:
